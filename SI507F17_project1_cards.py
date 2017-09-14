@@ -106,7 +106,7 @@ def play_war_game(testing=False):
         return "Tie", p1_score, p2_score
 
 
-# Very silly. Grabbing the functionality from the helper functions file here.
+# Very silly. Grabbing the functionality  from the helper functions file here.
 def show_song(inp="Winner"): # default winner ... but also could be something else if it works correctly, which it does not (put in description and remove this clarity)
     songs_resp = helper_functions.get_and_cache_songs(random.choice(["win","winner","hurrah","hooray"]))
     song_objs = [helper_functions.Song(s) for s in songs_resp["results"]]
