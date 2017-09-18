@@ -1,23 +1,12 @@
-## Do not change import statements.
 import unittest
 from SI507F17_project1_cards import *
 
-## Write your unit tests to test the cards code here.
-## You should test to ensure that everything explained in the code description file works as that file says.
-## If you have correctly written the tests, at least 3 tests should fail. If more than 3 tests fail, it should be because multiple of the test methods address the same problem in the code.
-## You may write as many TestSuite subclasses as you like, but you should try to make these tests well-organized and easy to read the output.
-## You should invoke the tests with verbosity=2 (make sure you invoke them!)
-
-#self.assertEqual(<thing you are testing>, <thing that should be equal to>, <optional descriptive message about what you are testing>)
-#Diamonds=0, Clubs=1, Hearts=2, Spades=3
-
 class JackTests(unittest.TestCase):          
 	def setUp(self):
-		self.card = Card(2,3)
-		self.jackofhearts= Card(2,11)
-		self.jackofspades=Card(3,11)
-	
-
+		self.card = Card(2, 3)
+		self.jackofhearts = Card(2, 11)
+		self.jackofspades = Card(3, 11)
+		
 	def test_one(self):
 		self.assertEqual(type(self.card.suit),str, "should be a string")
 	def test_two(self):
