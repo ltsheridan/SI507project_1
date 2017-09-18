@@ -1,12 +1,12 @@
 import unittest
 from SI507F17_project1_cards import *
 
-class JackTests(unittest.TestCase):          
+class JackTests(unittest.TestCase):
 	def setUp(self):
 		self.card = Card(2, 3)
 		self.jackofhearts = Card(2, 11)
 		self.jackofspades = Card(3, 11)
-		
+	
 	def test_one(self):
 		self.assertEqual(type(self.card.suit),str, "should be a string")
 	def test_two(self):
